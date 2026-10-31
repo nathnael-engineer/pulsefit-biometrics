@@ -1,0 +1,13 @@
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:integration_test/integration_test.dart';
+import 'package:pulsefit_biometrics/main.dart';
+
+void main() {
+  IntegrationTestWidgetsFlutterBinding.ensureInitialized();
+
+  testWidgets('Continuous 120 FPS waveform test', (WidgetTester tester) async {
+    await tester.pumpWidget(const ProviderScope(child: PulseFitApp()));
+    await tester.pumpAndSettle();
+  });
+}

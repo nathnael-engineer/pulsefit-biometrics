@@ -1,0 +1,26 @@
+name: pulsefit_biometrics
+description: "120FPS continuous cardiogram rendering with ultra-low power Bluetooth LE sensor pipeline."
+publish_to: "none"
+version: 1.8.2+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+  flutter: ">=3.24.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.5.1
+  flutter_reactive_ble: ^5.3.1
+  web_socket_channel: ^3.0.1
+  permission_handler: ^11.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
